@@ -1,7 +1,7 @@
 ## Configuração do Ambiente do Cliente (Máquina na Hml) ##
 
 server:
-  port: 8082
+  port: 8083
 
 # Config do service discovery
 eureka:

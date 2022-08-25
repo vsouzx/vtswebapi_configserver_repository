@@ -4,9 +4,9 @@ server:
   port: 8082
 
 # Config do service discovery
-  #eureka:
-  # name: eureka
-  # port: 8081
+eureka:
+name: eureka
+port: 8084
 
 ## Config Database
 spring:
