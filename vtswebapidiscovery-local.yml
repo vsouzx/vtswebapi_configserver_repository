@@ -1,7 +1,7 @@
 ## Configuração do Ambiente de Desenvolvimento (Máquina na AWS de Develop) ##
 
 eureka:
-  host: 172.31.66.252
+  host: localhost
   name: eureka
   port: 8081
 
