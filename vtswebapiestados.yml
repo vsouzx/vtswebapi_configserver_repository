@@ -9,9 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
-    register-with-eureka: true
-    healthcheck:
-      enabled: true
+    register-with-eureka: false
 
 ## Config Application and Database
 spring:
