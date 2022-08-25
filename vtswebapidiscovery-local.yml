@@ -4,10 +4,3 @@ eureka:
   host: localhost
   name: eureka
   port: 8081
-
-## Logging And Swagger UI
-## Logging level can be one of one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
-logging:
-  level:
-    root: INFO
-    br.absoftware.abscore_discovery: DEBUG

@@ -1,8 +1,8 @@
 ## Configuração Default da Aplicação ##
 
 server:
-  ## HTTP Server port
-  port: 8012
+  host: ${server.host}
+  port: ${server.port}
 
 ## Eureka - Service Discovery
 eureka:
@@ -17,8 +17,6 @@ eureka:
 spring:
   application:
     name: vtswebapiestados
-  jmx:
-    enabled: false
   datasource:
     url: ${database.url}
     password: ${database.password}
