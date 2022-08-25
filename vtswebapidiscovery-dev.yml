@@ -11,3 +11,11 @@ logging:
   level:
     root: INFO
     br.absoftware.abscore_discovery: DEBUG
+
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
