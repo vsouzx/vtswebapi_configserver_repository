@@ -1,0 +1,54 @@
+## Configuração Default da Aplicação ##
+
+server:
+  ## HTTP Server port
+  port: 8012
+
+## Eureka - Service Discovery
+eureka:
+  instance:
+    prefer-ip-address: true
+    statusPageUrlPath: http://${server.host}:${server.port}/actuator/info
+    healthCheckUrlPath: http://${server.host}:${server.port}/actuator/health
+  client:
+    service-url:
+      defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+
+## Config Application and Database
+spring:
+  application:
+    name: vtswebapiestados
+  jmx:
+    enabled: false
+  datasource:
+    url: ${database.url}
+    password: ${database.password}
+    username: ${database.username}
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: ${database.minimum-idle}
+      maximum-pool-size: ${database.maximum-pool-size}
+      connectionTimeout: 180000
+      idleTimeout: 60000
+      maxLifetime: 180000
+      ##leak-detection-threshold: 2000
+  jpa:
+    show-sql: false
+    database-platform: ${database.database-platform}
+    properties:
+      hibernate:
+        ddl-auto: update
+        proc:
+          param_null_passing: true
+        temp:
+          use_jdbc_metadata_defaults: false
+  ## Springfox
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+    ## Path Router Proxy
+    servlet:
+      path: /vtswebapiestados

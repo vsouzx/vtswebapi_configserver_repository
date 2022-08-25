@@ -1,0 +1,26 @@
+## Configuração Default da Aplicação ##
+
+server:
+  ## HTTP Server port
+  port: ${eureka.port}
+
+## Config Application
+spring:
+  application:
+    name: vtswebapidiscovery
+
+## Eureka - Service Discovery
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+## Logging level can be one of one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
+logging:
+  level:
+    root: WARN
+    br.absoftware.abscore_discovery: TRACE
