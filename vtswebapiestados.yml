@@ -6,10 +6,6 @@ server:
 
 ## Eureka - Service Discovery
 eureka:
-  instance:
-    prefer-ip-address: true
-    statusPageUrlPath: http://${server.host}:${server.port}/actuator/info
-    healthCheckUrlPath: http://${server.host}:${server.port}/actuator/health
   client:
     service-url:
       defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
@@ -41,14 +37,3 @@ spring:
     properties:
       hibernate:
         ddl-auto: update
-        proc:
-          param_null_passing: true
-        temp:
-          use_jdbc_metadata_defaults: false
-  ## Springfox
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-    ## Path Router Proxy
-    servlet:
-      path: /vtswebapiestados
