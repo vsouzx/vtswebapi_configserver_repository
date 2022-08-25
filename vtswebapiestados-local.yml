@@ -1,11 +1,12 @@
 ## Configuração do Ambiente do Cliente (Máquina na Hml) ##
 
 server:
+  host: 172.31.66.252
   port: 8083
 
 # Config do service discovery
 eureka:
-  host: localhost
+  host: 172.31.66.252
   name: eureka
   port: 8081
 
