@@ -9,7 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
-    register-with-eureka: false
+    register-with-eureka: true
 
 ## Config Application and Database
 spring:
