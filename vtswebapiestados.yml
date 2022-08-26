@@ -1,7 +1,6 @@
 ## Configuração Default da Aplicação ##
 
 server:
-  host: ${server.host}
   port: ${server.port}
 
 ## Eureka - Service Discovery

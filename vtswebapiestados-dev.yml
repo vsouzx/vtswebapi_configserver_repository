@@ -1,7 +1,6 @@
 ## Configuração do Ambiente do Cliente (Máquina na Hml) ##
 
 server:
-  host: localhost
   port: 8082
 
 # Config do service discovery
