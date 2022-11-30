@@ -18,7 +18,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: estados
-          uri: lb://estados
+        - id: vtswebapiestados
+          uri: lb://vtswebapiestados
           predicates:
             - Path:/estados/**
