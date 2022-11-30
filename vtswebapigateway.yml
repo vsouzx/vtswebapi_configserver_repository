@@ -17,7 +17,8 @@ spring:
     name: vtswebapigateway
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-          lowerCaseServiceId: true
+      routes:
+        - id: estados
+          uri: lb://estados
+          predicates:
+            - Path:/estados/**
