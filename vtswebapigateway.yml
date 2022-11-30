@@ -14,11 +14,11 @@ eureka:
 ## Config Application and Database
 spring:
   application:
-    name: vtswebapigateway
+    name: VTSWEBAPIGATEWAY
   cloud:
     gateway:
       routes:
-        - id: vtswebapiestados
-          uri: lb://vtswebapiestados
+        - id: VTSWEBAPIGATEWAY
+          uri: lb://VTSWEBAPIGATEWAY
           predicates:
             - Path:/estados/**
