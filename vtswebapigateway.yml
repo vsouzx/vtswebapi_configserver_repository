@@ -16,10 +16,7 @@ spring:
     name: vtswebapigateway
   cloud:
     gateway:
-      metrics:
-        enabled: true
-      routes:
-        - id: vtswebapiestados
-          uri: http://localhost:8082/
-          predicates:
-            - Path=/estados/**
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
