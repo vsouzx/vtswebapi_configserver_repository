@@ -7,7 +7,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
+      defaultZone: http://${eureka.host}:${eureka.port}
     register-with-eureka: true
     fetch-registry: true
 
