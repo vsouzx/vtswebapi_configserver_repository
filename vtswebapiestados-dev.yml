@@ -7,7 +7,7 @@ server:
 eureka:
   host: localhost
   name: eureka
-  port: 8084
+  port: 8081
 
 ## Config Database
 spring:
