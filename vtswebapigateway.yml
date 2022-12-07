@@ -7,18 +7,16 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
+      defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}
     register-with-eureka: true
     fetch-registry: true
 
 ## Config Application and Database
 spring:
   application:
-    name: VTSWEBAPIGATEWAY
+    name: vtswebapigateway
   cloud:
     gateway:
-      routes:
-        - id: vtswebapiestados
-          uri: lb://vtswebapiestados
-          predicates:
-            - Path:/estados/**
+      locator:
+        enabled: true
+        lowerCaseServiceId: true
