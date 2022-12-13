@@ -11,10 +11,12 @@ eureka:
 
 ## Config Database
 spring:
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
   datasource:
-    database-platform: org.hibernate.dialect.SQLServerDialect
-    url: jdbc:sqlserver://localhost:1433;databaseName=vtswebapi;useBulkCopyForBatchInsert=true;encrypt=true;trustServerCertificate=true
-    username: sa
-    password: 123
-    minimum-idle: 10
-    maximum-pool-size: 20
+    url: jdbc:mysql://vtswebapi-db.cnhop5ivkd4i.us-east-1.rds.amazonaws.com/vtswebapi
+    username: admin
+    password: vs368797
