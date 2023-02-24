@@ -21,8 +21,6 @@ spring:
     username: ${spring.datasource.username}
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
-      minimum-idle: ${spring.datasource.minimum-idle}
-      maximum-pool-size: ${spring.datasource.maximum-pool-size}
       connectionTimeout: 180000
       idleTimeout: 60000
       maxLifetime: 180000
