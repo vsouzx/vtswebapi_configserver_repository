@@ -24,6 +24,10 @@ spring:
         enabled: true
       routes:
         - id: vtswebapiestados
-          uri: lb://vtswebapiestados
+          uri: http://vtswebapiestados
+          predicates:
+            - Path=/**
+        - id: vtswebapiestados
+          uri: lb:ws://vtswebapiestados
           predicates:
             - Path=/**
