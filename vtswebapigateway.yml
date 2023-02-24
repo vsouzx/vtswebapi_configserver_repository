@@ -32,6 +32,6 @@ spring:
           predicates:
             - Path=/notification/**
         - id: vtswebapiestados
-            uri: lb:ws://vtswebapiestados
-            predicates:
-              - Path=/notification/**
+          uri: lb:ws://vtswebapiestados
+          predicates:
+            - Path=/notification/**
