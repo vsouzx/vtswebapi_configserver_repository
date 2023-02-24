@@ -17,6 +17,6 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:mysql://vtswebapi-db.cnhop5ivkd4i.us-east-1.rds.amazonaws.com/vtswebapi
-    username: admin
+    url: jdbc:mysql://localhost:3306/vtswebapi
+    username: root
     password: vs368797
