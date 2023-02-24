@@ -31,5 +31,3 @@ spring:
           uri: lb:ws://vtswebapiestados
           predicates:
             - Path=/notification/**
-          filters:
-            - name: WebSocket
