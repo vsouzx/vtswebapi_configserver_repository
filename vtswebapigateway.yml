@@ -26,7 +26,7 @@ spring:
         - id: vtswebapiestados
           uri: lb://vtswebapiestados
           predicates:
-            - Path=/**
+            - Path=/home/**,/estados/**
         - id: vtswebapiestados
           uri: lb:ws://vtswebapiestados
           predicates:
