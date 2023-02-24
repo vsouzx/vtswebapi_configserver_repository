@@ -28,10 +28,10 @@ spring:
           predicates:
             - Path=/**
         - id: vtswebapiestados
-          uri: http://localhost:8082
+          uri: http://vtswebapiestados
           predicates:
             - Path=/notification/**
         - id: vtswebapiestados
-          uri: lb:ws://localhost:8082
+          uri: lb:ws://vtswebapiestados
           predicates:
             - Path=/notification/**
