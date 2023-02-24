@@ -28,11 +28,10 @@ spring:
           predicates:
             - Path=/**
         - id: vtswebapiestados
-          uri: ws://localhost:8082
+          uri: http://vtswebapiestados
           predicates:
-            - Path=/notifications/**
-          filters:
-            - name: WebSocketRouting
-            - name: WebSocketHandler
-              args:
-                handler: NotificationWebSocket
+            - Path=/notification/**
+        - id: vtswebapiestados
+            uri: lb:ws://vtswebapiestados
+            predicates:
+              - Path=/notification/**
