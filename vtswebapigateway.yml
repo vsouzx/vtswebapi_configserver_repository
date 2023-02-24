@@ -26,12 +26,12 @@ spring:
         - id: vtswebapiestados
           uri: lb://vtswebapiestados
           predicates:
-            - Path=/**
+            - Path=/estados/**
         - id: vtswebapiestados
           uri: http://vtswebapiestados
           predicates:
-            - Path=/notification
+            - Path=/notification/**
         - id: vtswebapiestados
           uri: lb:ws://vtswebapiestados
           predicates:
-            - Path=/notification
+            - Path=/notification/**
