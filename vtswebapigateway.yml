@@ -30,8 +30,8 @@ spring:
         - id: vtswebapiestados
           uri: http://vtswebapiestados
           predicates:
-            - Path=/notifications
+            - Path=/kkk
         - id: vtswebapiestados
           uri: lb:ws://vtswebapiestados
           predicates:
-            - Path=/notifications
+            - Path=/kkk
