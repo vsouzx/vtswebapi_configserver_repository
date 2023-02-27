@@ -8,3 +8,6 @@ eureka:
   host: localhost
   name: eureka
   port: 8081
+
+settings:
+  allow-origin: 'http://localhost:8080/'

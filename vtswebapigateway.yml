@@ -31,6 +31,3 @@ spring:
           uri: lb:ws://vtswebapiestados
           predicates:
             - Path=/notification/**
-
-settings:
-  allow-origin: 'http://localhost:8080/'
