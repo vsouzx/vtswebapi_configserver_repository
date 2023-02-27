@@ -20,3 +20,6 @@ spring:
     url: jdbc:mysql://localhost:3306/vtswebapi
     username: root
     password: vs368797
+
+settings:
+  allow-origin: 'http://localhost:8080/'

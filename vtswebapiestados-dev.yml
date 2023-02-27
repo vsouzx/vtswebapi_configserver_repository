@@ -20,3 +20,6 @@ spring:
     url: jdbc:mysql://vtswebapi-db.cnhop5ivkd4i.us-east-1.rds.amazonaws.com/vtswebapi
     username: admin
     password: vs368797
+
+settings:
+  allow-origin: 'http://localhost:8080/'
