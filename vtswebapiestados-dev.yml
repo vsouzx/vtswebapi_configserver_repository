@@ -22,4 +22,4 @@ spring:
     password: vs368797
 
 settings:
-  allow-origin: 'http://localhost:8082/'
+  allow-origin: 'http://localhost:8888'
