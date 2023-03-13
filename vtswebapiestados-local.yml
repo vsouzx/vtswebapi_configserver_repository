@@ -11,15 +11,15 @@ eureka:
 
 ## Config Database
 spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
   jpa:
-    database: MYSQL
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
-    show-sql: true
-  datasource:
-    url: jdbc:mysql://localhost:3306/vtswebapi
-    username: root
-    password: vs368797
-
-settings:
-  allow-origin: 'http://localhost:8888/'
+  h2:
+    console:
+      enabled: true
