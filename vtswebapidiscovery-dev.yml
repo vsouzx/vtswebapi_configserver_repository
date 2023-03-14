@@ -1,6 +1,6 @@
 ## Configuração do Ambiente de Desenvolvimento (Máquina na AWS de Develop) ##
 
 eureka:
-  host: vtswebapidiscovery
+  host: discovery
   name: eureka
   port: 8081

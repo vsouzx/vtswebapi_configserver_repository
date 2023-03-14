@@ -12,7 +12,7 @@ spring:
 ## Eureka - Service Discovery
 eureka:
   client:
-    register-with-eureka: false
+    register-with-eureka: true
     fetch-registry: false
     service-url:
       defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
