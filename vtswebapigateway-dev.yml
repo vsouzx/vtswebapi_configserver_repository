@@ -5,7 +5,7 @@ server:
 
 # Config do service discovery
 eureka:
-  host: discovery
+  host: vtswebapidiscovery
   name: eureka
   port: 8081
 
